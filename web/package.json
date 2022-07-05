@@ -3,10 +3,12 @@
   "version": "0.0.0",
   "scripts": {
     "ng": "ng",
-    "start": "ng serve",
+    "start": "ng serve -o",
+    "altstart": "ng serve --port 4201 -o",
     "build": "ng build",
     "watch": "ng build --watch --configuration development",
-    "test": "ng test"
+    "test": "ng test",
+    "swaggger": "ng-openapi-gen --input https://localhost:5000/swagger/v1/swagger.json --output src/app/api"
   },
   "private": true,
   "dependencies": {
